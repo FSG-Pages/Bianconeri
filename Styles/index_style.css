@@ -391,14 +391,12 @@ body{
         justify-content: center;
         align-items: center;
         text-align: center;
-        font-size: 60px;
+        font-size: 45px;
         font-weight: 500;
         font-family: "Anton", sans-serif;
         position:sticky;
         top:0;
         letter-spacing: 4px;
-        padding-left: 15%;
-        padding-right: 15%;
     }
     .header-img{
         width: 150px;
@@ -415,6 +413,7 @@ body{
     margin:5px;
     text-align: left;
     padding: 10px;
+    position: static;
 }
 
 .right-main{
@@ -468,7 +467,7 @@ body{
     float: left;
     width: 30%;
     height: fit-content;
-    background-color: #ffffff5f;
+    background-color: #f4f3f3c4;
     border-radius: 10px;
     margin:5px;
     margin-left: 15px;
@@ -487,7 +486,6 @@ body{
     border-radius: 10px;
     background-color: #f3f3f389;
     padding: 10px;
-
 }
 .right-main{
     width: 65%;
@@ -501,11 +499,11 @@ body{
     padding: 5px;
 }
 .flag {
-    width: 64px;
-    height: 48px;
+    width: 80px;
+    height: 60px;
     transform: skew(-20deg); 
-    margin-bottom: 20%;
-    margin-top: 20%;
+    margin-bottom: 10%;
+    margin-top: 10%;
 }
 .hidden {
     display: none;
@@ -543,9 +541,9 @@ body{
 .content, .more{
     font-size: 20px;
     font-weight: 200;
-    width: 100%;
+    width: 90%;
     height: fit-content;
-    padding: 10px;
+    margin: 2%;
 }
 .left-end{
     text-align: left;
@@ -574,6 +572,7 @@ body{
 .menu-text{
     float: right;
     text-align: center;
+    font-size: auto;
     margin-left: 5%;
     margin-right: 5%;
 }
@@ -585,12 +584,13 @@ body{
 .main-menu-button{
     width: 50px;
     height: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
     border-radius: 15px;
     gap: 5px; 
     padding: 5px;
     box-shadow: 67px 52px 62px 11px rgb(227, 226, 226) inset;
     border: 2px solid rgba(0, 0, 0, 0.788);
     transition: all 0.3s ease-in-out;
+    position: static;
 }
 }
