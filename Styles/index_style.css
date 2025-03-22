@@ -406,24 +406,23 @@ body{
     }
     
 .left-main{
-    width: 25%;
+    width: 30%;
     height: fit-content;
     background-color: #f3f3f389;
-    margin-right: 20px;
+    margin-right: 5%;
+    margin-left: 2.5%;
     border-radius: 10px;
     margin:5px;
-    padding-left: 15px;
     text-align: left;
     padding: 10px;
 }
 
 .right-main{
-    width: 65%;
+    width: 60%;
     height: fit-content;
     background-color: #f3f3f389;
     border-radius: 10px;
-    margin: 5px;
-    padding-left: 15px;
+    margin-right: 2.5%;
     text-align: left;
     justify-content: center;
     padding: 10px;
@@ -457,7 +456,7 @@ body{
 }
 .menu-text{
     color: #000;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 500;
     margin-bottom: 30px;
 }
@@ -502,32 +501,44 @@ body{
     padding: 5px;
 }
 .flag {
-    width: 80px;
-    height: 60px;
+    width: 64px;
+    height: 48px;
     transform: skew(-20deg); 
-    margin-bottom: 50px;
-    margin-top:50px;
+    margin-bottom: 20%;
+    margin-top: 20%;
 }
 .hidden {
     display: none;
 }
 
-
+.ad{
+    width: 95%;
+}
 
 .article{
-    width: 70%;
+    width: 80%;
     height: fit-content;
     border-radius: 10px;
     background-color: #f3f3f389;
-    padding: 5%;
+    padding: 1%;
 }
 
 .article-img{
-    height: 160px;
-    width: 160px;
+    height: 120px;
+    width: 120px;
     float: right;
     border-radius: 5px;
     margin: 5%;
+}
+
+.article-header{
+    font-size: 30px;
+    font-weight: 600;
+}
+.article-subheader{
+    font-size: 20px;
+    font-weight: 600;
+    color:#302f2f;
 }
 .content, .more{
     font-size: 20px;
@@ -540,18 +551,46 @@ body{
     text-align: left;
     width: 30%;
     color: #000;
-    font-size: 20px;
+    font-size: 15px;
 }
 .center-end{
     text-align: center;
     width: 30%;
     color: #000;
-    font-size: 20px;
+    font-size: 15px;
+}
+.center-end-link{
+    color: #000;
+    font-size: 15px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;    
 }
 .right-end{
     text-align: right;
     width: 30%;
     color: #000;
-    font-size: 20px;
+    font-size: 15px;
+}
+.menu-text{
+    float: right;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.menu-container{
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+}
+.main-menu-button{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 50px;
+    border-radius: 15px;
+    gap: 5px; 
+    padding: 5px;
+    box-shadow: 67px 52px 62px 11px rgb(227, 226, 226) inset;
+    border: 2px solid rgba(0, 0, 0, 0.788);
+    transition: all 0.3s ease-in-out;
 }
 }
