@@ -597,6 +597,13 @@ body{
         background-color: #f3f3f389;
         padding: 10px;
     }
+    .article1{
+        width: 55%;
+        height: fit-content;
+        border-radius: 10px;
+        background-color: #f3f3f389;
+        padding: 10px;
+    }
     .right-main{
         width: 65%;
         height: 330px;
