@@ -452,8 +452,16 @@ body{
     transform: translateY(50px); 
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
-.firstArticle{
+.article-f{
+    width: 50%;
+    height: fit-content;
+    border-radius: 10px;
+    background-color: #f3f3f389;
+    padding: 10px;
+    opacity: 0; 
     animation: fadeInFromBottom 0.6s ease-out forwards;
+}
+.firstArticle{
     justify-content: center;
     align-items: center;
     display: flex;
