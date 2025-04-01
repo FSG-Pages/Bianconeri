@@ -275,16 +275,14 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 90%;
-    margin-left: 5%;
+    width: 80%;
+    margin-left: 10%;
     height: 100px;
-    position: relative;
-    overflow: hidden; 
     margin-top: 40px;
 }
 
 .ad {
-    width: 90%;
+    width: 80%;
     height: 100px;
     position: absolute;
     display: flex;
@@ -295,7 +293,6 @@ body{
     font-size: 20px;
     font-weight: 600;
     opacity: 0;
-    transform: translateX(100%);
     transition: opacity 1s ease-in-out;
 }
 
@@ -561,7 +558,7 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 30%;
+        width: 33%;
         background-color: #f4f3f3c4;
         border-radius: 10px;
         margin: 5px;
@@ -590,19 +587,12 @@ body{
         margin-top: 30px;
     }
 
-    .article{
-        width: 55%;
-        height: fit-content;
-        border-radius: 10px;
-        background-color: #f3f3f389;
-        padding: 10px;
-    }
     .article1{
-        width: 55%;
+        width: 80%;
         height: fit-content;
         border-radius: 10px;
         background-color: #f3f3f389;
-        padding: 10px;
+        padding: 1%;
     }
     .right-main{
         width: 65%;
@@ -707,6 +697,7 @@ body{
         border: 2px solid rgba(0, 0, 0, 0.788);
         transition: all 0.3s ease-in-out;
         position: relative;  
+        margin-left: 10%;
     }
     .main-menu-container {
         display: flex;
