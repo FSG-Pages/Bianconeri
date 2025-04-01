@@ -1,12 +1,16 @@
 function show_menu() {
-        let menu = document.getElementById("menu");
-        let currentDisplay = window.getComputedStyle(menu).display;
-    
-        if (currentDisplay === "none") {
-            menu.style.display = "block";
-        } else {
+    let menu = document.getElementById("menu");
+    let currentDisplay = window.getComputedStyle(menu).display;
+
+    if (currentDisplay === "none") {
+        menu.style.display = "block";
+        menu.style.animation = "showMenu 0.3s forwards";
+    } else {
+        menu.style.animation = "hideMenu 0.3s forwards";
+        setTimeout(() => {
             menu.style.display = "none";
-        }
+        }, 300); 
+    }
 }
 function read_more1() {
     let moreElement = document.getElementById("more");
@@ -210,3 +214,31 @@ function show_more_articles() {
         document.getElementById("more-articles").style.display = "none";
     }
 }
+function checkVisibility() {
+    const articles = document.querySelectorAll('.article');
+    articles.forEach(article => {
+        const rect = article.getBoundingClientRect();
+        if (rect.top <= window.innerHeight * 0.8 && rect.bottom >= 0) {
+            article.classList.add('visible'); 
+        }
+    });
+}
+window.addEventListener('scroll', checkVisibility);
+document.addEventListener('DOMContentLoaded', checkVisibility);
+
+const ads = document.querySelectorAll(".ad");
+let currentAdIndex = 0;
+
+function switchAd() {
+    ads.forEach((ad, index) => {
+        ad.classList.remove("active"); 
+    });
+
+    ads[currentAdIndex].classList.add("active"); 
+    ads[currentAdIndex].style.transform = "translateX(0)"; 
+
+    currentAdIndex = (currentAdIndex + 1) % ads.length; 
+}
+
+switchAd();
+setInterval(switchAd, 5000); 
