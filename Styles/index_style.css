@@ -279,6 +279,8 @@ body{
     margin-left: 10%;
     height: 100px;
     margin-top: 40px;
+    position: relative; 
+    overflow: hidden; 
 }
 
 .ad {
