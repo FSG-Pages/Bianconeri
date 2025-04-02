@@ -226,7 +226,5 @@ function checkVisibility() {
 window.addEventListener('scroll', checkVisibility);
 document.addEventListener('DOMContentLoaded', checkVisibility);
 
-const ads = document.querySelectorAll(".ad");
-let currentAdIndex = 0;
 
 
