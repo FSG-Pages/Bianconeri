@@ -596,7 +596,7 @@ body, html {
         padding: 1%;
     }
     .right-main{
-        width: 65%;
+        width: 50%;
         height: 330px;
         background-color: #f3f3f389;
         border-radius: 10px;
@@ -697,7 +697,7 @@ body, html {
         box-shadow: 67px 52px 62px 11px rgb(227, 226, 226) inset;
         border: 2px solid rgba(0, 0, 0, 0.788);
         transition: all 0.3s ease-in-out;
-        position: relative;  
+        margin-left: 10%;
         
     }
     .main-menu-container {
