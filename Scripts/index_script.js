@@ -229,16 +229,4 @@ document.addEventListener('DOMContentLoaded', checkVisibility);
 const ads = document.querySelectorAll(".ad");
 let currentAdIndex = 0;
 
-function switchAd() {
-    ads.forEach((ad, index) => {
-        ad.classList.remove("active"); 
-    });
 
-    ads[currentAdIndex].classList.add("active"); 
-    ads[currentAdIndex].style.transform = "translateX(0)"; 
-
-    currentAdIndex = (currentAdIndex + 1) % ads.length; 
-}
-
-switchAd();
-setInterval(switchAd, 5000); 

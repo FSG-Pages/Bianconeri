@@ -275,27 +275,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%;
-    margin-left: 10%;
-    height: 100px;
-    margin-top: 40px;
-    position: relative; 
-    overflow: hidden; 
-}
-
-.ad {
-    width: 80%;
-    height: 100px;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #6c6b6b;
-    color: #252424;
-    font-size: 20px;
-    font-weight: 600;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
 }
 
 .ad.active {
@@ -405,11 +384,31 @@ body{
         transform: translateY(0);
     }
 }
-
+@keyframes fadeInAd{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.ad {
+    width: 80%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6c6b6b;
+    color: #252424;
+    font-size: 20px;
+    font-weight: 600;
+    animation: fadeInAd 0.6s ease-out forwards;
+    margin-top: 30px;
+}
 #menu {
     display: none;
     opacity: 0;
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .menu{
