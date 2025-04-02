@@ -250,6 +250,32 @@ const ads = document.querySelectorAll(".ad");
         currentAdIndex = (currentAdIndex + 1) % ads.length;
         showAd(currentAdIndex);
     }
-
     setInterval(nextAd, 5000);
     showAd(currentAdIndex);
+
+    // PRZEJCIE DO STRONY ZE STATYSTYKAMI
+    let keyCombo = [];
+        let visitCount = parseInt(localStorage.getItem('totalVisits')) || 0;
+
+        function incrementVisitCount() {
+            visitCount++; 
+            localStorage.setItem('totalVisits', visitCount);  
+        }
+
+        incrementVisitCount();
+
+        document.addEventListener('keydown', function(event) {
+            keyCombo.push(event.key);
+
+            if (keyCombo[keyCombo.length - 4] === 'Control' && 
+                keyCombo[keyCombo.length - 3] === 'a' && 
+                keyCombo[keyCombo.length - 2] === 'a' && 
+                keyCombo[keyCombo.length - 1] === 'a') {
+                window.location.href = 'https://fsg-pages.github.io/Bianconeri/Webs/stats.html';
+            }
+
+            if (keyCombo.length > 4) {
+                keyCombo.shift();
+            }
+        });
+    // https://fsg-pages.github.io/Bianconeri/Webs/stats.html

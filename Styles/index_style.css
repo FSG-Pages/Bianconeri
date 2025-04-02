@@ -607,8 +607,8 @@ body, html {
         padding: 5px;
     }
     .flag {
-        width: 80px;
-        height: 60px;
+        width: 60px;
+        height: 50px;
         transform: skew(-20deg); 
         margin-bottom: 10%;
         margin-top: 10%;
@@ -698,7 +698,7 @@ body, html {
         border: 2px solid rgba(0, 0, 0, 0.788);
         transition: all 0.3s ease-in-out;
         position: relative;  
-        margin-left: 10%;
+        
     }
     .main-menu-container {
         display: flex;

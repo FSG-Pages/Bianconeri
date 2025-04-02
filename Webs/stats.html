@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statystyki</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 50px;
+        }
+        h1 {
+            font-size: 50px;
+            margin-bottom: 40px;
+            color: #333;
+        }
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .stats {
+            font-size: 40px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Statystyki Strony</h1>
+    <div class="container">
+        <div class="stats">Wszystkich odwiedzin: <span id="totalVisits">0</span></div>
+        <div class="stats">Aktywnych użytkowników: <span id="activeUsers">1</span></div>
+    </div>
+
+    <script>
+        document.getElementById('totalVisits').textContent = localStorage.getItem('totalVisits') || 0;
+    </script>
+</body>
+</html>
