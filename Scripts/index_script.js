@@ -226,5 +226,30 @@ function checkVisibility() {
 window.addEventListener('scroll', checkVisibility);
 document.addEventListener('DOMContentLoaded', checkVisibility);
 
+const ads = document.querySelectorAll(".ad");
+    let currentAdIndex = 0;
 
+    function showAd(index) {
+        ads.forEach((ad, i) => {
+            if (i === index) {
+                ad.style.display = "flex";
+                setTimeout(() => {
+                    ad.classList.add("active");
+                }, 10);  
+            } else {
+                ad.classList.remove("active");
+                setTimeout(() => {
+                    ad.style.display = "none";  
+                }, 1000); 
+            }
+        });
+    }
 
+    function nextAd() {
+        let previousAdIndex = currentAdIndex;
+        currentAdIndex = (currentAdIndex + 1) % ads.length;
+        showAd(currentAdIndex);
+    }
+
+    setInterval(nextAd, 5000);
+    showAd(currentAdIndex);
